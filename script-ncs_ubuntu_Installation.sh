@@ -65,9 +65,8 @@ rm nRFCommandLineTools10121Linuxamd64.tar.gz
 
 #echo "-------配置命令行环境变量------"
 cd ${HOME}
-sudo touch .zephyrrc
-sudo echo 'export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb' >> .zephyrrc
-sudo echo 'export GNUARMEMB_TOOLCHAIN_PATH="~/gnuarmemb"' >> .zephyrrc
+echo 'export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb'| sudo tee .zephyrrc
+echo 'export GNUARMEMB_TOOLCHAIN_PATH="~/gnuarmemb"' | sudo tee -a .zephyrrc
 
 #echo "-------打开NCS文件夹------"
 # cat ~/.bashrc
