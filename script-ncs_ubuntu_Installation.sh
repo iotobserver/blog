@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ncs_revision="v1.5.0"
+ncs_revision="v1.6.0"
 
 cd ${HOME}
 sudo rm -r ncs gn gnuarmemb
